@@ -1,0 +1,9 @@
+body{
+	background-color: #03010D;
+	margin: 2%;
+}
+
+#cabecera{
+	background-color: #5b7989;
+	display: inline-flex;
+}
