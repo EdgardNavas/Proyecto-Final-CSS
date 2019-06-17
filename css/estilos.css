@@ -1,17 +1,21 @@
 body{
-	background-color: #03010D;
+	background-color: #02010a;
 	color: white;
-	margin: auto;
 	font-family: 'Dancing Script', cursive;
 	font-size: 4px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	width: 80%;
+	margin: auto;
+	max-width: 900px;
 }
 
 #cabecera{
 	background-color: #5b7989;
 	display: flex;
-	flex-flow: row wrap;
-	width: 900px;
-	margin: auto;
 	border-radius: 10px 10px 0 0px;
 }
 
@@ -35,6 +39,36 @@ h1{
 	font-size: 5em;
 }
 
+#contenido{
+	width: 80%;
+	background-color: #82c3a6;
+	margin: auto;
+	max-width: 900px;
+}
 
+.img-principal {
+	width: 60%;
+	margin: auto;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 
+section img[class^="img"] {
+		box-shadow: 2px 2px 2px #02010a;
+}
+
+.section2 {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
+}
+
+figure img{
+	width: 25vw;
+	margin: auto;
+	text-align: center;
+}
 
