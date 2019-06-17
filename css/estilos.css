@@ -1,9 +1,40 @@
 body{
 	background-color: #03010D;
-	margin: 2%;
+	color: white;
+	margin: auto;
+	font-family: 'Dancing Script', cursive;
+	font-size: 4px;
 }
 
 #cabecera{
 	background-color: #5b7989;
-	display: inline-flex;
+	display: flex;
+	flex-flow: row wrap;
+	width: 900px;
+	margin: auto;
+	border-radius: 10px 10px 0 0px;
 }
+
+h1{
+	font-size: 8em;
+	text-shadow: 2px 2px 0 #02010a;
+	margin-left: 2%;
+}
+
+#menu-navegacion{
+	width: 28%;
+	margin: auto;
+	text-align: right;
+	margin-right: 7%;
+}
+
+.enlace{
+	color: white;
+	text-decoration: none;
+	padding-left: 5%;
+	font-size: 5em;
+}
+
+
+
+
