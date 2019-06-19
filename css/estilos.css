@@ -1,7 +1,12 @@
+@font-face{
+	font-family: Dancing Script;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
 body{
 	background-color: #02010a;
 	color: white;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Dancing Script';
 	font-size: 4px;
 	display: flex;
 	flex-wrap: wrap;
@@ -24,7 +29,7 @@ header{
 .titulo1{
 	font-size: 8em;
 	text-shadow: 2px 2px 0 #02010a;
-	margin-left: 2%;
+	margin-left: 4%;
 }
 
 #menu-navegacion{
@@ -36,9 +41,29 @@ header{
 
 .enlace{
 	color: white;
-	text-decoration: none;
 	padding-left: 5%;
 	font-size: 5em;
+}
+
+.enlace-inicio{
+	color: white;
+	padding-left: 5%;
+	font-size: 5em;
+	text-decoration: none;
+}
+
+.enlace-paisajes{
+	color: white;
+	padding-left: 5%;
+	font-size: 5em;
+	text-decoration: none;
+}
+
+.enlace-retratos{
+	color: white;
+	padding-left: 5%;
+	font-size: 5em;
+	text-decoration: none;
 }
 
 /* Sección de imagen principal*/
@@ -67,7 +92,7 @@ section img[class^="img"]{
 
 /* Sección de imagenes secundaria*/
 
-.section2 {
+#section2 {
 	background-color: #d5c75f;
 	padding-top: 3vw;
 	display: flex;
@@ -95,6 +120,26 @@ figcaption{
 	font-size: 4em;
 	font-weight: bold;
 	color: black;
+}
+
+/* Galería*/
+
+#Section3{
+	display: flex;
+	width: 100%;
+}
+
+.cp-1,.cp-2,.cp-3{
+	width: 33.33%;
+}
+
+img[src*="galeria"]{
+	width: 80%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
 }
 
 /* Footer*/
@@ -139,6 +184,7 @@ p{
 	font-size: 4em;
 	margin: 2% 2% 2% 20%;
 	padding-bottom: 2%;
+	text-shadow: 0.2px 0.2px 0 black;
 }
 
 .enlace3{
@@ -146,6 +192,7 @@ p{
 	font-size: 3em;
 	text-decoration: none;
 	margin-left: 2.5%;
+	text-shadow: 0.2px 0.2px 0 black;
 }
 
 .fila{
