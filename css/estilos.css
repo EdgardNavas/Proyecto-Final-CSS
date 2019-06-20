@@ -204,7 +204,7 @@ p{
 }
 
 .c1,.c2,.c3,.c4{
-	padding-bottom: 5%;
+	padding-bottom: 3.5%;
 }
 
 /*====================== Animations Sección 2 ======================*/
@@ -267,6 +267,7 @@ p{
 		margin-right: 7%;
 		width: 28%;
 		padding: 0;
+		min-width: 224px;
 	}
 
 	.titulo1{
