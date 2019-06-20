@@ -10,22 +10,20 @@ body{
 	font-size: 4px;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 1%;
 }
 
 header{
-	width: 100%;
-	margin: 0;
+	width: 80%;
+	margin: auto;
+	max-width: 900px;
 }
 
 /* Sección del header*/
 
 #cabecera{
 	background-color: #5b7989;
-	display: block;
+	display: flex;
 	border-radius: 10px 10px 0 0px;
-	padding-top: 5%;
-	text-align: center;
 }
 
 .titulo1{
@@ -35,8 +33,10 @@ header{
 }
 
 #menu-navegacion{
-	text-align: center;
-	padding-bottom: 5%;
+	width: 28%;
+	margin: auto;
+	text-align: right;
+	margin-right: 7%;
 }
 
 .enlace{
@@ -69,7 +69,7 @@ header{
 /* Sección de imagen principal*/
 
 #contenido{
-	width: 100%;
+	width: 80%;
 	background-color: #82c3a6;
 	margin: auto;
 	max-width: 900px;
@@ -77,11 +77,11 @@ header{
 }
 
 .img-principal {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 	display: block;
-	margin-top: 8%;
-	margin-bottom: 8%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 /* Borde a imágenes*/
@@ -95,13 +95,14 @@ section img[class^="img"]{
 #section2 {
 	background-color: #d5c75f;
 	padding-top: 3vw;
-	display: block;
+	display: flex;
 	border: 1px solid 
 }
 
 figure{
-	width: 80%;
-	margin:5% auto 5% auto;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 figure img{
@@ -110,13 +111,13 @@ figure img{
 
 figcaption{
 	text-align: center;
-	padding: 2.5vw 0 0.8vw 0;
-	margin-top: 0.7vw 0 0.7vw 0; 
+	padding: 1vw 0 1vw 0;
+	margin-top: 0.5vw 0 0.5vw 0; 
 
 }
 
 .enlace2{
-	font-size: 5.5em;
+	font-size: 4em;
 	font-weight: bold;
 	color: black;
 }
@@ -129,6 +130,7 @@ figcaption{
 
 img[src*="galeria"]{
 	width: 25%;
+	border: 2px solid white;
 	margin: 5% 2.5% 5% 4.5%;
 }
 
@@ -136,12 +138,8 @@ img[src*="galeria"]{
 	filter: blur(10px);
 }
 
-#section3 img:nth-child(2n){
+img[order="2"]{
 	filter: grayscale(100%);
-}
-
-#section3 img:nth-child(3){
-	filter: sepia(90%);
 }
 
 /* Footer*/
@@ -155,13 +153,13 @@ img[src*="galeria"]{
 }
 
 img[src*="icon"]{
-	width: 18px;
-	height: 18px;
+	width: 17px;
+	height: 17px;
 }
 
 .c1,.c2,.c3,.c4{
-	width: 100%;
-	flex-flow: row;
+	width: 25%;
+	margin: 0 auto;
 }
 
 .titulo2{
@@ -180,11 +178,10 @@ img[src*="icon"]{
 .c1>p>a{
 	color:black;
 	text-decoration: none;
-	font-size: 1.4vw;
 }
 
 p{
-	font-size: 1.4vw;
+	font-size: 4em;
 	margin: 2% 2% 2% 20%;
 	padding-bottom: 2%;
 	text-shadow: 0.2px 0.2px 0 black;
@@ -192,7 +189,7 @@ p{
 
 .enlace3{
 	color: black;
-	font-size: 1vw;
+	font-size: 3em;
 	text-decoration: none;
 	margin-left: 2.5%;
 	text-shadow: 0.2px 0.2px 0 black;
@@ -220,81 +217,4 @@ p{
 .img-secundaria2:hover{
 	transform: translate(20px,-5px);
 	box-shadow: 2px 2px 2px #82c3a6;
-}
-
-/* Break points*/
-
-.c1{
-	order: 2;
-}
-
-.c2{
-	order: 3;
-}
-
-.c3{
-	order: 1;
-}
-
-.c4{
-	order: 4;
-}
-
-@media (min-width: 900px) {
-
-	.c1,.c2,.c3,.c4 {
-		width: 25%;
-	}
-
-	img[src*="galeria"]{
-		width: 25%;
-	}
-
-	header {
-		width: 80%;
-		max-width: 900px;
-		margin: auto;
-	}
-
-	#cabecera {
-		display: flex;
-		padding: 0;
-	}
-
-	#menu-navegacion {
-		text-align: right;
-		margin: auto;
-		margin-right: 7%;
-		width: 28%;
-		padding: 0;
-	}
-
-	#contenido {
-		width: 80%;
-	}
-
-	#section2 {
-		display: flex;
-	}
-
-	figure{
-		width: 40%;
-		margin-left: 5%;
-		margin-right: 5%;
-		margin: auto;
-	}
-
-	.img-principal {
-		width: 70%;
-		margin-top: 4%;
-		margin-bottom: 4%;
-	}
-
-	#pie-de-pagina{
-		background-color: #C6d5c5;
-		display: flex;
-		border-radius: 0px 0px 10px 10px;
-		width: 100%;
-		padding: 2% 0 5% 0;	
-	}
 }
