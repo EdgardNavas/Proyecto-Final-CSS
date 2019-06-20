@@ -13,12 +13,14 @@ body{
 	margin: 1%;
 }
 
+/*====================== Sección del header ======================*/
+
 header{
 	width: 100%;
 	margin: 0;
+	animation-name: slide-in;
+	animation-duration: 1.5s;
 }
-
-/* Sección del header*/
 
 #cabecera{
 	background-color: #5b7989;
@@ -66,7 +68,7 @@ header{
 	text-decoration: none;
 }
 
-/* Sección de imagen principal*/
+/*====================== Sección de imagen principal ======================*/
 
 #contenido{
 	width: 100%;
@@ -84,13 +86,13 @@ header{
 	margin-bottom: 8%;
 }
 
-/* Borde a imágenes*/
+/*====================== Borde a imágenes ======================*/
 
 section img[class^="img"]{
 		box-shadow: 2px 2px 2px #02010a;
 }
 
-/* Sección de imagenes secundaria*/
+/*====================== Sección de imagenes secundaria ======================*/
 
 #section2 {
 	background-color: #d5c75f;
@@ -121,7 +123,7 @@ figcaption{
 	color: black;
 }
 
-/* Galería*/
+/*====================== Galería ======================*/
 
 #Section3{
 	display: flexbox;
@@ -144,65 +146,64 @@ img[src*="galeria"]{
 	filter: sepia(90%);
 }
 
-/* Footer*/
+/* ====================== Footer ======================*/
 
 #pie-de-pagina{
 	background-color: #C6d5c5;
-	display: flex;
 	border-radius: 0px 0px 10px 10px;
 	width: 100%;
-	padding: 2% 0 5% 0;	
+	padding: 2% 0 5% 0;
+	box-sizing: border-box;	
+}
+
+.fila{
+	display: flex;
+}
+
+.a-img{
+	display: flex;
+	width: 7%;
+	margin-left: 30%;
 }
 
 img[src*="icon"]{
-	width: 18px;
-	height: 18px;
-}
-
-.c1,.c2,.c3,.c4{
 	width: 100%;
-	flex-flow: row;
 }
 
 .titulo2{
-	font-size: 6em;
-	text-align: left;
-	margin:5%; 
+	font-size: 8em;
 }
 
 .titulo2,p,.fila{
 	color: black;
-	text-align: left;
-	display: flex;
-	margin-left: 20%;
-}
+	text-align: center;
+	}
 
 .c1>p>a{
 	color:black;
 	text-decoration: none;
-	font-size: 1.4vw;
-}
+	font-size: 5vw;
+	width:7%;
+	}
 
 p{
-	font-size: 1.4vw;
-	margin: 2% 2% 2% 20%;
-	padding-bottom: 2%;
+	font-size: 5vw;
 	text-shadow: 0.2px 0.2px 0 black;
 }
 
 .enlace3{
 	color: black;
-	font-size: 1vw;
+	font-size: 4vw;
 	text-decoration: none;
-	margin-left: 2.5%;
+	margin: auto 0 auto 2.5%;
 	text-shadow: 0.2px 0.2px 0 black;
 }
 
-.fila{
-	padding-top: 3%;
+.c1,.c2,.c3,.c4{
+	padding-bottom: 5%;
 }
 
-/* Animaciones Sección 2*/
+/*====================== Animations Sección 2 ======================*/
 
 .img-secundaria1{
 	transition: transform 1.2s;
@@ -222,33 +223,28 @@ p{
 	box-shadow: 2px 2px 2px #82c3a6;
 }
 
-/* Break points*/
+/*====================== Animation-Slidein ======================*/
 
-.c1{
-	order: 2;
+@keyframes slide-in{
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
 }
 
-.c2{
-	order: 3;
-}
-
-.c3{
-	order: 1;
-}
-
-.c4{
-	order: 4;
-}
+/*====================== Desktop disign ======================*/
 
 @media (min-width: 900px) {
 
-	.c1,.c2,.c3,.c4 {
-		width: 25%;
-	}
 
-	img[src*="galeria"]{
-		width: 25%;
-	}
+/*====================== Sección del header-desktop ======================*/
 
 	header {
 		width: 80%;
@@ -269,6 +265,8 @@ p{
 		padding: 0;
 	}
 
+/*====================== Images section Desktop ======================*/
+
 	#contenido {
 		width: 80%;
 	}
@@ -277,11 +275,12 @@ p{
 		display: flex;
 	}
 
-	figure{
+	figure {
 		width: 40%;
 		margin-left: 5%;
 		margin-right: 5%;
 		margin: auto;
+		padding: 0;
 	}
 
 	.img-principal {
@@ -290,11 +289,63 @@ p{
 		margin-bottom: 4%;
 	}
 
-	#pie-de-pagina{
-		background-color: #C6d5c5;
+
+	figcaption {
+		padding: 1vw 0 1vw 0;
+		margin-top: 0.5vw 0 0.5vw 0; 
+
+	}
+
+/*====================== Galería desktop ======================*/
+
+		img[src*="galeria"]{
+		width: 25%;
+	}
+
+/*====================== Footer Desktop ======================*/
+
+	#pie-de-pagina {
 		display: flex;
-		border-radius: 0px 0px 10px 10px;
-		width: 100%;
-		padding: 2% 0 5% 0;	
+	}
+
+	.c1,.c2,.c3,.c4{
+		width: 25%;
+		margin: 0 auto;
+	}
+
+	.titulo2{
+		margin:5%; 
+	}
+
+	.titulo2,p,.fila{
+		text-align: left;
+		margin-left: 20%;
+	}
+
+	p{
+		font-size: 4em;
+		margin: 2% 2% 2% 20%;
+		padding-bottom: 2%;
+	}
+
+	.enlace3{
+		font-size: 3em;
+		margin-left: 5%;
+	}
+
+	.a-img{
+		display: flex;
+		width: 10%;
+		height: 10%;
+		margin:0;
+	}
+
+	.c1>p>a{
+		font-size: inherit;
+	}
+
+	.fila{
+		margin-left: 25%;
+		padding-bottom: 2.5%;
 	}
 }
