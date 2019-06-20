@@ -31,40 +31,40 @@ header{
 }
 
 .titulo1{
-	font-size: 8em;
+	font-size: 9em;
 	text-shadow: 2px 2px 0 #02010a;
-	margin-left: 4%;
+	margin-left: auto;
 }
 
 #menu-navegacion{
 	text-align: center;
-	padding-bottom: 5%;
+	padding: 3% 5% 6% 0;
 }
 
 .enlace{
 	color: white;
 	padding-left: 5%;
-	font-size: 5em;
+	font-size: 6em;
 }
 
 .enlace-inicio{
 	color: white;
 	padding-left: 5%;
-	font-size: 5em;
+	font-size: 6em;
 	text-decoration: none;
 }
 
 .enlace-paisajes{
 	color: white;
 	padding-left: 5%;
-	font-size: 5em;
+	font-size: 6em;
 	text-decoration: none;
 }
 
 .enlace-retratos{
 	color: white;
 	padding-left: 5%;
-	font-size: 5em;
+	font-size: 6em;
 	text-decoration: none;
 }
 
@@ -113,7 +113,7 @@ figure img{
 figcaption{
 	text-align: center;
 	padding: 2.5vw 0 0.8vw 0;
-	margin-top: 0.7vw 0 0.7vw 0; 
+	margin: 0.7vw 0 0.7vw 0; 
 
 }
 
@@ -126,12 +126,12 @@ figcaption{
 /*====================== Galería ======================*/
 
 #Section3{
-	display: flexbox;
+	display: flex;
 }
 
 img[src*="galeria"]{
-	width: 25%;
-	margin: 5% 2.5% 5% 4.5%;
+	width: 60%;
+	margin: 7% 20% 0% 20%;
 }
 
 #section3 img:first-child{
@@ -144,6 +144,10 @@ img[src*="galeria"]{
 
 #section3 img:nth-child(3){
 	filter: sepia(90%);
+}
+
+#section3 img:last-child{
+	margin-bottom: 7%;
 }
 
 /* ====================== Footer ======================*/
@@ -265,6 +269,10 @@ p{
 		padding: 0;
 	}
 
+	.titulo1{
+		font-size: 8em;
+	}
+
 /*====================== Images section Desktop ======================*/
 
 	#contenido {
@@ -292,14 +300,18 @@ p{
 
 	figcaption {
 		padding: 1vw 0 1vw 0;
-		margin-top: 0.5vw 0 0.5vw 0; 
+		margin: 0.5vw 0 0.5vw 0; 
 
 	}
 
 /*====================== Galería desktop ======================*/
+	#Section3{
+		display: flex;
+	}
 
-		img[src*="galeria"]{
+	img[src*="galeria"],#section3 img:last-child{
 		width: 25%;
+		margin: 4% 2.5% 4% 4.5%;
 	}
 
 /*====================== Footer Desktop ======================*/
@@ -329,15 +341,15 @@ p{
 	}
 
 	.enlace3{
-		font-size: 3em;
-		margin-left: 5%;
+		font-size: 3.8em;
+		margin-left: 4%;
 	}
 
 	.a-img{
 		display: flex;
-		width: 10%;
-		height: 10%;
-		margin:0;
+		width: 11%;
+		height: 11%;
+		margin: 0;
 	}
 
 	.c1>p>a{
@@ -345,7 +357,7 @@ p{
 	}
 
 	.fila{
-		margin-left: 25%;
+		margin-left: 20%;
 		padding-bottom: 2.5%;
 	}
 }
